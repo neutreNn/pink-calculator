@@ -1,0 +1,94 @@
+body {
+	overflow:  hidden;
+	background: linear-gradient(#f4f4ed, white);
+}
+
+.container {
+	width: 95%;
+	height: 100vh;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	width: 470px;
+	margin:  auto;
+	border-radius: 10px;
+	background: #f2f2f2;
+	padding: 15px 15px 20px 20px;
+	box-shadow:  0px 2px 4px 0px rgb(255, 0, 85);
+}
+
+#userInput {
+	box-sizing: border-box;
+	width: 100%;
+	background: transparent;
+	padding:  40px 5px;
+	text-align: right;
+	direction: ltr;
+	outline: none;
+	border: none;
+	font-size: 1.25rem;
+	color: rgb(255, 0, 85);
+}
+
+#userInput::placeholder {
+	color: rgb(255, 0, 85);
+}
+
+.btn {
+	background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+}
+
+.frontEqual {
+	padding: 12px 90px;
+	border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+	display: block;
+}
+
+.front {
+	display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.btn:active .front {
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 500px) {
+	.front {
+		padding: 12px 30px
+	}
+
+	.frontEqual {
+		padding: 12px 66px;
+	}
+  }
+
+  @media (max-width: 390px) {
+	.front {
+		padding: 12px 20px
+	}
+
+	.frontEqual {
+		padding: 12px 78px;
+	}
+  }
